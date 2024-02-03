@@ -25,7 +25,86 @@ a {
 	font-size: 1.125rem; 
 	font-weight: 600; 
 } 
-
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  }
+  
+  .main h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	color: #EFEFEF;
+  }
+  
+  .main h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+	color: #EFEFEF;
+  }
+  
+  .main h3 {
+	font-size: 1.125rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+	color: #EFEFEF;
+  }
+  
+  .main p {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	color: #EFEFEF;
+  }
+  
+  .main a {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #EFEFEF;
+  }
+  
+  .main a:hover {
+	text-decoration: underline;
+  }
+  
+  .main .button {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 15px;
+	background-color: #EFEFEF;
+	color: #060c21;
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .main .button:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
+  }
+  
+  .main .button:active {
+	transform: scale(1);
+	filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2));
+  }
+  
+  .main .button span {
+	margin-left: 0.5rem;
+  }
+  
+  .main .button img {
+	height: 1.5rem;
+	aspect-ratio: 1;
+  }
+  
+  .main .button:hover>* {
+	transform: scale(1.1);
+}
 .logo { 
 	position: relative; 
 	height: 100%; 
@@ -45,7 +124,10 @@ a {
 
 .links { 
 	display: flex; 
-	flex-direction: column; 
+	flex-direction: column;
+	margin-bottom: 2rem;
+	margin-left: 2rem;  
+	margin-right: 2rem;  
 } 
 
 .link { 
@@ -71,7 +153,8 @@ a {
 .about { 
 	font-size: 1rem; 
 	font-weight: 500; 
-	margin-bottom: 2rem; 
+	margin-bottom: 2rem;
+	margin-left: 2rem; 
 	color: #EFEFEF; 
 } 
 
@@ -107,42 +190,42 @@ a {
     background: linear-gradient(to bottom left,#360465 ,#AA54E6 ), 
 
 		#A084CA; 
-	color: white; 
+	color: #EFEFEF; 
 } 
 
 .link:nth-child(4) { 
     background: linear-gradient(to bottom left,#360465 ,#AA54E6 ), 
 
 		#645CAA; 
-	color: white; 
+	color: #EFEFEF; 
 } 
 
 .link:nth-child(5) { 
     background: linear-gradient(to bottom left,#360465 ,#AA54E6 ), 
 
 		#4b4585; 
-	color: white; 
+	color: #EFEFEF; 
 } 
 
 .link:nth-child(6) { 
     background: linear-gradient(to bottom left,#360465 ,#AA54E6 ), 
 
 		#413b71; 
-	color: white; 
+	color: #EFEFEF; 
 } 
 
 .link:nth-child(7) { 
     background: linear-gradient(to bottom left,#360465 ,#AA54E6 ), 
  
 		#352e5c; 
-	color: white; 
+	color: #EFEFEF; 
 } 
 
 .link:nth-child(8) { 
     background: linear-gradient(to bottom left,#360465 ,#AA54E6 ), 
  
 		#211d38; 
-	color: white; 
+	color: #EFEFEF; 
 } 
 
 .link:hover { 
@@ -193,6 +276,8 @@ a {
     height: 40px;
     top: 0;
     left: 0;
+	margin-left: 0.2rem;
+	margin-top: 0.2rem;
     object-fit: cover;
   }
 
@@ -210,4 +295,14 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+h1{
+	/* senter the text and make it white */
+	text-align: center;
+	color: #EFEFEF;
+	/* add some margin to the top */
+	margin-top: 10rem;
+
 }
