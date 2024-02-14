@@ -3,23 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/navv.css">
+    <link rel="stylesheet" href="./styles/output.css">
     <title>Emtethal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
+   <header class="bg-[#360760] relative shadow-lg px-3 py-2">
+    <nav class="flex justify-between">
+        <div class="w-[140px] md:w-[140px] flex items-center hover:scale-110">
+            <img  src="./pics/logo_white.svg" alt="LOGO" srcset="">
+          </div>
+          <div class="flex items-center gap-3">
 
-
-    <header>
-        <div class="image">
-            <img class="artboard" src="/pics/Artboard_323.png" alt="logo">
+          <div class=" navLinks duration-500 absolute md:static md:w-auto w-full md:h-auto h-auto bg-[#360760] flex md:items-center gap-[1.5vw] top-[100%] left-[-100%] px-5 md:py-0 py-5 ">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8 text-[#E0E0E0]  ">
+                <li class="hover:scale-110"><a class="hover:text-yellow-400 " href="#" onclick="showmsg1()">تواصل معنا</a></li>
+                <li class="hover:scale-110"><a class="hover:text-yellow-400 " href="#" onclick="showmsg2()">الباقات</a></li>
+                <li class="hover:scale-110"><a class="hover:text-yellow-400 " href="#" onclick="showmsg3()">كيفية الاستخدام</a></li>
+                <li class="hover:scale-110"><a class="hover:text-yellow-400 " href="#" onclick="showmsg4()">الرئيسية</a></li>
+            </ul>
         </div>
-            <div class="links">
-                <a href="" >home</a>
-                <a href="">about us</a>
-                <a href="">contact us</a>
-                <a href="">services</a>
-            </div>
-    </header>
+        <div class="flex items-center gap-2">
+            <label onclick="onMenuToggle(this)"  class="cursor-pointer lg:hidden block md:hidden mr-[2vw] ">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="#E0E0E0"/></svg>
+            </label>
+        </div>
+    </div>
+    </nav>
+    
+   </header>
+   
 
+   <script>
+    function onMenuToggle(e) {
+  const navlinks = document.querySelector(".navLinks");
+  e.name = e.name === "menu" ? "close" : "menu";
+  navlinks.classList.toggle("left-[0%]");
+}
+    function showmsg1(){
+        alert("تواصل معنا");
+    }
+    function showmsg2(){
+        alert("الباقات");
+    }
+    function showmsg3(){
+        alert("كيفية الاستخدام");
+    }
+
+    function showmsg4(){
+        alert("الرئيسية");
+    }
+  </script>
 </body>
 </html>
